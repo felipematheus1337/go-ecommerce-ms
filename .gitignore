@@ -55,6 +55,8 @@ __debug_bin
 # Air (live reload)
 .air/
 
+.claude
+
 # Generated files
 *.coverprofile
 
