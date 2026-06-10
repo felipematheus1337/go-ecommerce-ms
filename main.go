@@ -22,6 +22,10 @@ func main() {
 		return
 	}
 
+	if os.Getenv("GIN_MODE") == "release" {
+		gin.SetMode(gin.ReleaseMode)
+	}
+
 	r := gin.Default()
 
 	port := os.Getenv("PORT")
